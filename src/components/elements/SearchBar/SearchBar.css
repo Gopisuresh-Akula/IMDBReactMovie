@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+.rmdb-searchbar {
+  width: 100%;
+  height: 100px;
+  background: rgb(61, 161, 219);
+  position: relative;
+  padding: 25px 20px 0px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.rmdb-searchbar-content {
+  max-width: 500px;
+  height: 55px;
+
+  margin: 0 auto;
+  border-radius: 40px;
+  position: relative;
+  left: 400px;
+  color: #fff;
+}
+
+.rmdb-fa-search {
+  position: absolute;
+  right: 1px;
+  top: 12px;
+  color: rgb(61, 161, 219);
+}
+
+.rmdb-searchbar-input {
+  font-family: 'Abel', sans-serif;
+  font-size: 38px;
+  position: absolute;
+  left: 70px;
+  top: 7px;
+  border: 0;
+  background: transparent;
+  height: 40px;
+  color: #fff;
+}
+
+body {
+  background: #DDD;
+  font-size: 15px;
+}
+
+#wrap {
+  margin: 50px 100px;
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  padding: 0;
+  position: relative;
+}
+
+input[type="text"] {
+  height: 45px;
+  font-size: 38px;
+  display: inline-block;
+  font-family: 'Abel', sans-serif;
+  font-weight: 50px;
+  border: none;
+  outline: none;
+  color: rgb(61, 161, 219);
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+::placeholder {
+  color: rgb(61, 161, 219);
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid rgb(61, 161, 219);
+}
+
+input[type="text"]:focus {
+  width: 500px;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+
+
+.rmdb-searchbar-input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 720px) {
+  .rmdb-searchbar-input {
+    font-size: 28px;
+    color: #fff;
+  }
+}
